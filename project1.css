@@ -1,0 +1,47 @@
+body {
+    background: linear-gradient(to bottom, #0b8377, #D4B3FF, rgb(223, 223, 148));
+    font-family: Kanit;
+}
+
+h1 {
+    color:white;
+    text-align: center;
+}
+.project-description {
+    text-align: center;       /* centers the text */
+    margin: 20px auto;        /* centers the container horizontally and adds vertical spacing */
+    padding: 15px;            /* optional: space inside the box */
+    color: white;             /* makes text readable on background */
+    font-size: 18px;          /* adjust as needed */
+}
+
+.project-images {
+    text-align: center;           /* center all images */
+    margin: 20px auto;
+}
+
+.project-images img {
+    margin: 10px;                 /* spacing between images */
+}
+.skills {
+    text-align: center;                       /* centers container text */                     
+    color: white;                             /* text color */
+    font-size: 19px;
+}
+
+.skills h2 {
+    margin-bottom: 15px;                      /* space between heading and bullets */
+}
+
+.skills ul {
+    list-style-type: disc;                     /* standard bullets */
+    list-style-position: inside;               /* bullet moves inside text box */
+    padding: 0;
+    margin: 0 auto;
+    display: inline-block;                     /* makes ul shrink to fit content */
+    text-align: left;                          /* text aligns to bullet inside inline-block */
+}
+
+.skills li {
+    margin: 5px 0;                             /* spacing between bullets */
+}
