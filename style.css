@@ -1,5 +1,11 @@
+/* General Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
-
+/* Headings */
 h1 {
     background-color: teal; 
     color: white;          
@@ -8,25 +14,29 @@ h1 {
     margin-top: 10px;  
 }
 
-
+/* Body */
 body {
     font-family: Arial, Helvetica, sans-serif;
     background: linear-gradient(to bottom, #0d29ca, #D4B3FF, rgb(189, 189, 0));
+    line-height: 1.6;
+    padding: 10px;
 }
 
+/* Banner Section */
 .banner {
-    background-repeat: repeat;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 250px; 
+    height: auto;
+    margin-bottom: 20px;
 }
 
 .profile {
-    width: 200px;
-    height: 200px;
+    width: 30%;
+    max-width: 130%;
+    height: auto;
     border-radius: 50%;
     border: 7px solid teal;
     object-fit: cover;
@@ -36,128 +46,76 @@ body {
 .side-gif {
     position: absolute; 
     top: 0;
-    width: 750px; 
-    height: 250px;
+    width: 50%; 
+    height: auto;
     object-fit: cover;
     z-index: 1;
 }
 
-.left {
-    left: 0;
-}
+.left { left: 0; }
+.right { right: 0; }
 
-.right {
-    right: 0;
-}
-
+/* Contact Links */
 .contact-links {
     display: flex;
-    justify-content: space-between;
-    width: 400px;
-    margin: 10px auto 0 auto;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin: 15px auto;
     background-color: rgb(162, 212, 212);
     padding: 10px 20px;
     border-radius: 10px;
     color: white;
     font-weight: bold;
+    max-width: 500px;
+    text-align: center;
 }
 
+/* Objective */
 .objective {
     background-color: rgb(162, 212, 212);
-    padding: 10px 20px;
+    padding: 15px 20px;
     border-radius: 10px;
     color: white;
     font-weight: bold;
     text-align: center;
-    margin: 15px auto 0 auto;
+    margin: 20px auto;
     font-size: 16px;
-    max-width: 2000px;
+    max-width: 900px;
 }
 
+/* Education + Work */
 .education-section {
     display: flex;
-    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin: 20px auto;
+    justify-content: center;
     align-items: flex-start;
-    gap: 40px;
-    margin: 20px;
 }
 
-.education-details {
-    border-radius: 10px;
-    color: white;
-    font-weight: bold;
-    padding: 10px 15px;
-    margin-top: 8px;
+.education-details, .work-section {
+    flex: 1 1 400px;
+    min-width: 300px;
 }
 
 .education {
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    max-width: 400px;
     background-color: rgb(162, 212, 212);
     border-radius: 10px;
     color: white;
     font-weight: bold;
+    padding: 15px;
+    margin-top: 10px;
 }
 
 .education-gif {
-    max-width: 375px;
+    max-width: 100%;
     height: auto;
-    margin: 10px auto 0 auto;
-}
-
-h2, h4, h5 {
-    color: rgb(155, 95, 154);      
-    background-color: rgb(236, 236, 187);
-    border-radius: 10px;
-    font-weight: bold;
-    text-align: left;
-    padding: 10px;
-}
-
-h2 { font-size: 24px; max-width: 220px; margin-top: 10px; }
-h4 { font-size: 24px; max-width: 220px; margin-top: 10px; }
-h5 { font-size: 22px; padding: 10px 10px; display: inline-block; }
-
-
-h3 {
-    font-size: 22px;
-    color: rgb(155, 95, 154);      
-    background-color: rgb(236, 236, 187);
-    border-radius: 10px;
-    font-weight: bold;
-    display: inline-block;
-    padding: 10px;
-    margin-top: 10px;
-}
-
-
-.skills-section {
-    max-width: 800px;
-    width: 100%;
-    text-align: center;
-    margin-right: 20px;
-}
-
-.skills {
-    max-width: 800px;
-    width: 100%;
-    color: white;
-    background-color: rgb(162, 212, 212);
-    border-radius: 10px;
-    font-weight: bold;
-    text-align: left;
-    margin-top: 10px;
-}
-
-.work-section {
-    display: flex;
-    margin-top: 20px;
+    margin: 15px auto 0 auto;
+    display: block;
 }
 
 .work-exp {
-    max-width: 900px;
     background-color: rgb(162, 212, 212);
     border-radius: 10px;
     color: white;
@@ -165,55 +123,99 @@ h3 {
     text-align: left;
     padding: 20px;
     margin-top: 10px;
-    margin-left: 20px; 
 }
 
+h2, h4, h5, h3 {
+    color: rgb(155, 95, 154);      
+    background-color: rgb(236, 236, 187);
+    border-radius: 10px;
+    font-weight: bold;
+    padding: 10px;
+    margin-top: 15px;
+    display: inline-block;
+}
+
+h2, h4 { font-size: 24px; }
+h5 { font-size: 22px; }
+h3 { font-size: 22px; }
+
+
+.skills-section {
+    max-width: 900px;
+    width: 100%;
+    text-align: center;
+    margin: 30px auto;
+}
+
+.skills {
+    background-color: rgb(162, 212, 212);
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    text-align: left;
+    padding: 15px;
+}
+
+/* Awards */
 .awards-cert {
-    flex: 1;
-    max-width: 800px;
+    max-width: 900px;
+    margin: 30px auto;
     text-align: center;
 }
 
 .awards {
-    max-width: 800px;
-    color: white;
     background-color: rgb(162, 212, 212);
     border-radius: 10px;
+    color: white;
     font-weight: bold;
-    margin-left: auto;
     margin-top: 10px;
+    padding: 15px;
 }
 
+/* Projects */
 .projects {
-    display: block;
-    width: 29%;
-    margin-left: auto;
-    margin-right: 50px;
+    max-width: 400px;
+    margin: 30px auto;
     text-align: center;
-    margin-top: -40%;
 }
 
 .project-link {
-    display: block;
     width: 100%;
-    margin: 10px 0;
-    border: 10px solid teal;
+    margin: 15px 0;
+    border: 8px solid teal;
     border-radius: 100px;
-    text-decoration: none;
-    color: teal;
-    font-size: 100px;
     transition: 0.3s;
 }
 
 .project-link:hover {
     background-color: gold;
-    color: cyan;
 }
 
+/* Thank You */
 .thank-you {
-    display: flex;
-    margin-left: 10%;
-    margin-top: -30%;
-    max-width: 50%;
-    text-align: right;
+    display: block;
+    margin: 30px auto;
+    max-width: 90%;
+    text-align: center;
+}
+
+/* Media Queries for Mobile */
+@media (max-width: 768px) {
+    .banner {
+        flex-direction: column;
+    }
+
+    .side-gif {
+        display: none; /* hide giant gifs on phones */
+    }
+
+    .contact-links {
+        flex-direction: column;
+        gap: 10px;
+        width: 90%;
+    }
+
+    .projects {
+        max-width: 90%;
+    }
 }
