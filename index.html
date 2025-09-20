@@ -1,92 +1,110 @@
-
 <!DOCTYPE html>
-<html> 
+<html lang="en"> 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eshal Subhani's Resume</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="banner">
-        <img src="fish.gif" class="side-gif left">
-        <img src="prof picture.jpeg" class="profile">
-        <img src="fish.gif" class="side-gif right">
-    </div>
 
-    <h1>Eshal Subhani</h1>
-    
-    <div class="contact-links">
-        <a href="mailto:es004540@ucf.edu">es004540@ucf.edu</a>
-        <a href="https://www.linkedin.com/in/eshal-subhani/">Connect with me on LinkedIn!</a>
-    </div>
+    <!-- Header Section -->
+    <header class="banner">
+        <img src="fish.gif" class="side-gif left" alt="Animated fish swimming left side">
+        <img src="prof picture.jpeg" class="profile" alt="Profile picture of Eshal Subhani">
+        <img src="fish.gif" class="side-gif right" alt="Animated fish swimming right side">
+    </header>
 
-    <p class="objective">
-        Hello! I'm Eshal Subhani, an IT student at UCF passionate about transforming tech challenges into opportunities. Whether it's designing innovative solutions or collaborating on forward-thinking projects, I'm driven to create technology that makes a difference.
-    </p>
-    
-    <div class="education-section">
-        <br>
-        <div class="education-details">
-            <h2>My Education:</h2>
-            <div class="education">
-                Bachelors of Science, University Of Central Florida, GPA: 3.5, Expected Graduation: DEC 2026 <br><br>
-                Associates Degree, Valencia College, GPA: 3.7, August 2023 <br><br>
-                Colonial High School, Orlando, FL, GPA: 3.9 May 2022
-            </div>
-            <img src="cat2.gif" class="education-gif">
-        </div>
+    <main>
+        <h1>Eshal Subhani</h1>
 
-        <div class="work-section"> 
-            <h4>Work Experience:</h4>
-            <div class="work-exp">
-                <br> 
-                1. Vision Health Institute (August 2021 to Present) <br><br> 
-                Ophthalmic Technician<br><br> 
-                - Utilize advanced equipment to investigate eye diseases <br><br>
-                - Troubleshoot and calibrate medical equipment and software <br><br> 
-                - Maintain and update EHR data accurately, ensuring integrity, version control, and HIPAA compliance. <br><br>
-                - Document equipment performance issues and coordinate with vendors or IT support to resolve technical problems efficiently <br><br>
-                
-                2. Target Optical (May 2021 to August 2021) <br><br> 
-                Ophthalmic Technician <br><br>
-                - Managed Excel spreadsheets for patient demographics and insurance <br><br>
-                - Pretested patients with equipment <br><br>
-                - Verified and billed insurances <br>
-            </div> 
-        </div>
-    </div>
+        <!-- Contact Info -->
+        <nav class="contact-links" aria-label="Contact Links">
+            <a href="mailto:es004540@ucf.edu">Email Me</a>
+            <a href="https://www.linkedin.com/in/eshal-subhani/">LinkedIn Profile</a>
+        </nav>
+
+        <!-- Objective -->
+        <section class="objective">
+            <p>
+                Hello! I'm Eshal Subhani, an IT student at UCF passionate about transforming tech challenges into opportunities. 
+                Whether it's designing innovative solutions or collaborating on forward-thinking projects, I'm driven to create 
+                technology that makes a difference.
+            </p>
+        </section>
+
+        <!-- Education & Work -->
+        <section class="education-section">
+            <article class="education-details">
+                <h2>My Education</h2>
+                <ul class="education">
+                    <li>Bachelor of Science, University of Central Florida — GPA: 3.5 (Expected Dec 2026)</li>
+                    <li>Associate Degree, Valencia College — GPA: 3.7 (Aug 2023)</li>
+                    <li>Colonial High School, Orlando, FL — GPA: 3.9 (May 2022)</li>
+                </ul>
+                <img src="cat2.gif" class="education-gif" alt="Animated cat gif">
+            </article>
+
+            <article class="work-section"> 
+                <h2>Work Experience</h2>
+                <div class="work-exp">
+                    <h3>Vision Health Institute <span>(Aug 2021 – Present)</span></h3>
+                    <p>Position: Ophthalmic Technician</p>
+                    <ul>
+                        <li>Utilize advanced equipment to investigate eye diseases</li>
+                        <li>Troubleshoot and calibrate medical equipment and software</li>
+                        <li>Maintain and update EHR data, ensuring accuracy and HIPAA compliance</li>
+                        <li>Coordinate with vendors and IT to resolve equipment issues</li>
+                    </ul>
+
+                    <h3>Target Optical (May 2021 – Aug 2021)</h3>
+                    <p>Position: Ophthalmic Technician</p>
+                    <ul>
+                        <li>Managed Excel spreadsheets for patient demographics and insurance</li>
+                        <li>Pretested patients with equipment</li>
+                        <li>Verified and billed insurance claims</li>
+                    </ul>
+                </div>
+            </article>
+        </section>
+
+        <!-- Skills -->
+        <section class="skills-section">
+            <h2>Skills</h2>
+            <ul class="skills">
+                <li>Systems & Infrastructure: Computer Architecture, System Administration, Linux & Windows</li>
+                <li>Networking & Security: Network Protocols, Cybersecurity Fundamentals, Secure Computing Practices</li>
+                <li>Databases: Database Design, SQL, Database Management Systems</li>
+                <li>Development: OOP Programming, Software Design Patterns, Data Structures & Algorithms</li>
+                <li>Languages: C++, C#, Java, Python, SQL, PowerShell</li>
+            </ul>
+        </section>
         
-    <div class="skills-section">
-        <br><br>
-        <h3>Skills:</h3>
-        <ul class="skills">
-            <li>Systems & Infrastructure: Computer Architecture, System Administration, Linux & Windows</li><br>
-            <li>Networking & Security: Network Protocols, Cybersecurity Fundamentals, Secure Computing Practices</li><br>
-            <li>Databases: Database Design, SQL, Database Management Systems</li><br>
-            <li>Development: OOP Programming, Software Design Patterns, Data Structures & Algorithms</li><br>
-            <li>General Programming Languages: C++, C#, Java, Python, SQL, PowerShell Scripting & Automation</li><br>
-        </ul>
-    </div>
-    
-    <div class="awards-cert">
-        <h5>Awards & Certifications:</h5>
-        <div class="awards">
-            Awarded Bright Futures Academic Scholarship 100% (May 2022) <br><br>
-            TestOut Information Technology Fundamentals Pro <br> 
-            (Credential ID: 6-1C6-VFWP9Q) (December 2023)
-        </div>
-    </div>
+        <!-- Awards -->
+        <section class="awards-cert">
+            <h2>Awards & Certifications</h2>
+            <ul class="awards">
+                <li>Bright Futures Academic Scholarship 100% (May 2022)</li>
+                <li>TestOut IT Fundamentals Pro — Credential ID: 6-1C6-VFWP9Q (Dec 2023)</li>
+            </ul>
+        </section>
 
-    <div class="projects">
-        <h3>Click to see these projects I made below!</h3>
-        <a link href="page3.html">
-            <img src="pusheen.gif" class="project-link">  
-        </a>
-        <a link href="page2.html" class="circle-text">
-            <img src="pusheen2.gif" class="project-link">
-        </a>
-        <br> 
-    </div>
+        <!-- Projects -->
+        <section class="projects">
+            <h2>Projects</h2>
+            <br> <h3>Click the icons below! </h3>
+            <a href="page3.html">
+                <img src="pusheen.gif" class="project-link" alt="Project link with pusheen gif">
+            </a>
+            <a href="page2.html">
+                <img src="pusheen2.gif" class="project-link" alt="Project link with pusheen gif 2">
+            </a>
+        </section>
+    </main>
 
-    <img src="ty3.gif" class="thank-you">
+    <!-- Footer -->
+    <footer>
+        <img src="ty3.gif" class="thank-you" alt="Thank you gif">
+    </footer>
 </body>
 </html>
