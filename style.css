@@ -186,12 +186,11 @@ h3 {
 
 .projects {
     display: block;
-    max-width: 400px;
-    width: 100%;
+    width: 29%;
     margin-left: auto;
     margin-right: 50px;
     text-align: center;
-    margin-top: -480px;
+    margin-top: -40%;
 }
 
 .project-link {
@@ -213,8 +212,8 @@ h3 {
 
 .thank-you {
     display: flex;
-    margin-left: 150px;
-    margin-top: -400px;
-    max-width: 800px;
+    margin-left: 10%;
+    margin-top: -30%;
+    max-width: 50%;
     text-align: right;
 }
