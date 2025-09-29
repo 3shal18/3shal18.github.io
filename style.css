@@ -113,6 +113,11 @@ body {
     margin: 15px auto 0 auto;
     display: block;
 }
+.contact-icon {
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+}
 
 .work-exp {
     background-color: rgb(162, 212, 212);
