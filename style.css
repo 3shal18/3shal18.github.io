@@ -114,9 +114,9 @@ body {
     display: block;
 }
 .contact-icon {
-    width: 30px;
-    height: 30px;
-    vertical-align: middle;
+    width: 5px;
+    height: 5px;
+    vertical-align: left;
 }
 
 .work-exp {
