@@ -208,20 +208,53 @@ h3 { font-size: 19px; }
 
 @media (max-width: 768px) {
     .banner {
-        flex-direction: column;
+        height: 250px;  /* Smaller banner on mobile */
+    }
+
+    .profile {
+        width: 50%;  /* Bigger profile picture on mobile */
+        max-width: 300px;
     }
 
     .side-gif {
-        display: none; 
+        width: 70%;  /* Show more of the fish on mobile */
+    }
+
+    h1 {
+        font-size: 24px;  /* Smaller heading */
     }
 
     .contact-links {
-        flex-direction: column;
+        flex-direction: row;  /* Keep icons in a row */
         gap: 10px;
         width: 90%;
+        padding: 10px;
+    }
+
+    .contact-icon {
+        width: 40px;  /* Smaller icons */
+        height: 40px;
+        margin: 5px;
+    }
+
+    .objective {
+        font-size: 14px;  /* Smaller text */
+        padding: 15px;
+    }
+
+    .education-section {
+        flex-direction: column;  /* Stack sections vertically */
+    }
+
+    .skills, .awards, .work-exp, .education {
+        font-size: 14px;  /* Smaller text in lists */
     }
 
     .projects {
         max-width: 90%;
+    }
+
+    .project-link {
+        border: 5px solid teal;  /* Thinner borders */
     }
 }
