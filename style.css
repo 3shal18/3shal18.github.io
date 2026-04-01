@@ -48,6 +48,7 @@ body {
 }
 
 .side-gif {
+    object-fit: contain;
     position: absolute; 
     top: 0;
     width: 50%; 
@@ -201,7 +202,7 @@ h3 { font-size: 19px; }
 .thank-you {
     display: block;
     margin: 90px auto;
-    width: 36%;
+    width: 80%;
     text-align: center;
 }
 
